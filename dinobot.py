@@ -101,7 +101,7 @@ async def generate_question_from_mistral():
         return None
 
 async def check_answer_from_mistral(question, correct_answer, user_answer):
-    api_key = "HPVn28TLjprLwdE2PO5EyEdLK48z7nIT"  # Votre clé API Mistral
+    api_key = "api key here"  # Votre clé API Mistral
     url = "https://api.mistral.ai/v1/chat/completions"  # URL de l'API Mistral
 
     prompt = f"{question} Une réponse possible est {correct_answer}. Est-ce que la réponse suivante est correcte : {user_answer}. Réponse (oui/non uniquement) : "
